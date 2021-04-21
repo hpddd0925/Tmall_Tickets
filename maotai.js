@@ -13,7 +13,7 @@ function checkElementState(path,callback){
 	}
 }
 
-
+var clickEvent = document.createEvent("MouseEvents");	var clickElement = document.getElementById("divA");	clickEvent.initMouseEvent("click",false,true);	clickElement.dispatchEvent(clickEvent);
 
 //点击购买按钮
 function clickBuy(){
